@@ -22,7 +22,7 @@ export default class Image {
         if (response && response.status == 429) throw new Error(constants.ERRORS[429].error);
         if (response && response.status !== 200) throw new Error(constants.ERRORS[500].error);
         if (!response) throw new Error(constants.ERRORS[500].error);
-        let res = await response.arrayBuffer();
+        let res = await response.buffer();
         return res;
     }
 }
