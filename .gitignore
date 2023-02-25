@@ -1,3 +1,7 @@
 # Files
 .npmignore
 test.ts
+tsconfig.json
+
+# Folders
+dist
