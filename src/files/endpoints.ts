@@ -1,0 +1,50 @@
+export default {
+    ANIME: [
+        "find",
+        "search",
+        "quote"
+    ],
+    BUFFER: [
+        "beautiful",
+        "ship",
+        "brain",
+        "circle",
+        "communism",
+        "gay",
+        "invert",
+        "simp",
+        "santa",
+        "supreme",
+        "discordjs",
+        "sonic",
+        "blur",
+        "color",
+        "walletcard",
+        "welcomecard",
+        "8ball",
+        "badnews",
+        "deepfry",
+        "delete",
+        "facts",
+        "piechart",
+        "thisis",
+        "target",
+        "tweet",
+        "overlay",
+        "kowalski",
+        "rankcard"
+    ],
+    JSON: [
+        "binary",
+        "8ball",
+        "dominant",
+        "imagesearch",
+        "calendar",
+        "define",
+        "npm",
+        "translate",
+        "route",
+        "github",
+        "dall-e"
+    ]
+}
