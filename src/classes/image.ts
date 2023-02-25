@@ -16,14 +16,13 @@ export default class Image {
         if (!params || typeof params !== 'object') throw new Error('[APY WRAPPER] :: Invalid parameters provided.');
         let pms: string = Util.getParams(params);
         let url = `${constants.BASE_URL}/image/${route.toLowerCase()}${pms}`;
-        console.log(url);
         const response = await fetch(url).catch(e => null);
         if (response && response.status == 400) throw new Error(constants.ERRORS[400].error);
         if (response && response.status == 404) throw new Error(constants.ERRORS[404].error);
         if (response && response.status == 429) throw new Error(constants.ERRORS[429].error);
         if (response && response.status !== 200) throw new Error(constants.ERRORS[500].error);
         if (!response) throw new Error(constants.ERRORS[500].error);
-        let res = await response.buffer();
+        let res = await response.arrayBuffer();
         return res;
     }
 }

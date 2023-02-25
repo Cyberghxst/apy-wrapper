@@ -16,7 +16,6 @@ export default class Json {
         if (!params || typeof params !== 'object') throw new Error('[APY WRAPPER] :: Invalid parameters provided.');
         let pms: string = Util.getParams(params);
         let url = `${constants.BASE_URL}/json/${route.toLowerCase()}${pms}`;
-        console.log(url);
         const response = await fetch(url).catch(e => null);
         if (response && response.status == 400) throw new Error(constants.ERRORS[400].error);
         if (response && response.status == 404) throw new Error(constants.ERRORS[404].error);
