@@ -11,7 +11,7 @@ export default class Image {
      * @param route The image route name.
      * @param params Route parameters inside an object.
      */
-    static async get (route: string, params: any) {
+    static async get (route: string, params: any): Promise<any> {
         if (!Util.isValidImage(route)) throw new Error('[APY WRAPPER] :: The provided image endpoint route is invalid.');
         if (!params || typeof params !== 'object') throw new Error('[APY WRAPPER] :: Invalid parameters provided.');
         let pms: string = Util.getParams(params);

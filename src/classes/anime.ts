@@ -11,7 +11,7 @@ export default class Anime {
      * @param route The anime route name.
      * @param params Route parameters inside an object.
      */
-    static async get (route: string, params: any) {
+    static async get (route: string, params: any): Promise<any> {
         if (!Util.isValidAnime(route)) throw new Error('[APY WRAPPER] :: The provided anime endpoint route is invalid.');
         if (!params || typeof params !== 'object') throw new Error('[APY WRAPPER] :: Invalid parameters provided.');
         let pms: string = Util.getParams(params);
