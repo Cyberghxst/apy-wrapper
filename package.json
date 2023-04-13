@@ -1,6 +1,6 @@
 {
   "name": "apy-wrapper",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "The Node.JS wrapper for interfacing with APY.",
   "main": "dist/index.js",
   "types": "types.d.ts",
@@ -8,5 +8,12 @@
     "test": "ts-node src/test.ts"
   },
   "author": "Cyberghxst",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
 }

@@ -1,7 +1,8 @@
 # Files
 .npmignore
 test.ts
-tsconfig.json
+pnpm-lock.yaml
 
 # Folders
 dist
+node_modules
