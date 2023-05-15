@@ -13,8 +13,8 @@ const { Image } = require('apy-wrapper');
 ```
 ### Discord.js
 ```javascript
-const { AttachmentBuilder } = require('discord.js');
-const { Image } = require('apy-wrapper');
+const { AttachmentBuilder } = require('discord.js'),
+    { Image } = require('apy-wrapper');
 ...
 async run(message, args) {
     let image = await Image.get('discordjs', { text: 'APY' });

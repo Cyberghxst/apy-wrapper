@@ -1,8 +1,6 @@
 export default {
     ANIME: [
-        "find",
-        "search",
-        "quote"
+        "gif"
     ],
     BUFFER: [
         "blur", 

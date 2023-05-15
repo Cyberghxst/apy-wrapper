@@ -1,5 +1,5 @@
 export default {
-    BASE_URL: "https://apy.cyberghxst.ga",
+    BASE_URL: "https://api.munlai.me",
     ERRORS: {
         400: {
             "status": 400,

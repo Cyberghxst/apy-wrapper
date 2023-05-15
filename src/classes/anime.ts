@@ -5,7 +5,7 @@ import Util from './util';
 /**
  * Makes the class startup.
  */
-class Anime {
+export class Anime {
     /**
      * 
      * @param route The anime route name.

@@ -1,11 +1,12 @@
 {
   "name": "apy-wrapper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The Node.JS wrapper for interfacing with APY.",
   "main": "dist/index.js",
   "types": "types.d.ts",
   "scripts": {
-    "test": "ts-node src/test.ts"
+    "test": "ts-node src/test.ts",
+    "pub": "tsc && pnpm publish --access public --no-git-checks"
   },
   "author": "Cyberghxst",
   "license": "ISC",
